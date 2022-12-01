@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Register</title>
+      <style>
+        body{
+          background-color: #e9ecef;
+        }
+        form {
+          border: 2px solid red;
+          padding: 17px;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+          width: 300px;
+        }
+        button {
+          background: #ff989d;
+          color: black;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action="/register" method="post" id="formRegister">
+        <!-- Nombre usuario -->
+      <label for="usernameRegister">Ingrese su username</label>
+      <br>
+      <input type="text" name="username" id="usernameRegister">
+      <br>
+      <!-- Contraseña usuario -->
+      <label for="contraseñaRegister">Ingrese su contraseña</label>
+      <br>
+      <input type="text" name="password" id="contraseñaRegister">
+      <br>
+      <!-- Email usuario -->
+      <label for="emailRegister">Ingrese su email</label>
+      <br>
+      <input type="email" name="email" id="emailRegister">
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <button onclick="location.href='/login'">Ir a login</button>
+  </body>
+</html>

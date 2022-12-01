@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login</title>
+      <style>
+        body{
+          background-color: #e9ecef;
+        }
+        form {
+          border: 2px solid red;
+          padding: 17px;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+          width: 300px;
+        }
+        button {
+          background: #ff989d;
+          color: black;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="/login" method="post" id="formLogin">
+        <!-- Nombre usuario -->
+        <label for="usernameRegister">Ingrese su username</label>
+        <br>
+        <input type="text" name="username" id="usernameRegister">
+        <br>
+        <!-- Contraseña usuario -->
+        <label for="contraseñaRegister">Ingrese su contraseña</label>
+        <br>
+        <input type="text" name="password" id="contraseñaRegister">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <button onclick="location.href='/register'">Ir a Register</button>
+  </body>
+</html>
